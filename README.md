@@ -1,4 +1,4 @@
-# FleetFlow
+﻿# FleetFlow
 
 FleetFlow is a multi-role logistics operations platform for shipment tracking, driver assignment, delivery updates, proof-of-delivery notes, and auditable exception handling.
 
@@ -51,6 +51,7 @@ The Kaggle trucking dataset is stored separately in 14 typed `Kaggle*` tables. T
 Authentication is prepared for Authentik OIDC through Auth.js. See [`docs/authentik.md`](docs/authentik.md) for provider setup and callback URLs.
 
 Apache Superset map embedding is also prepared. Follow [`docs/superset.md`](docs/superset.md) to run Superset locally and connect a dashboard.
+The admin analytics page at `/admin/analytics` embeds a provisioned 21-chart Superset dashboard using the existing database. See [analytics setup](docs/analytics.md); run `npm run superset:setup` then `npm run superset:up`.
 
 ## Start locally
 
